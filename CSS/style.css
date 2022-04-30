@@ -34,6 +34,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 80px;
+  -webkit-animation: fadeIn 1.4s forwards;
+          animation: fadeIn 1.4s forwards;
 }
 
 .nav .burger div {
@@ -52,6 +54,24 @@ body {
 @media only screen and (max-width: 920px) {
   .nav .burger div {
     display: block;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
   }
 }
 
@@ -205,6 +225,8 @@ header {
 
 header .content {
   margin-top: 10rem;
+  -webkit-animation: introLoad 1.9s forwards;
+          animation: introLoad 1.9s forwards;
 }
 
 header .content h1 {
@@ -222,6 +244,28 @@ header .content p {
 @media only screen and (max-width: 920px) {
   header .content p {
     width: 430px;
+  }
+}
+
+@-webkit-keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
+}
+
+@keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
   }
 }
 
