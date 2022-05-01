@@ -15,7 +15,7 @@ body {
 :root {
   --light-green:#4DD3BE;
   --darker-green:#2b9482;
-  --white:#f6f6f6;
+  --white:#fff;
   --black:#000;
 }
 
@@ -386,7 +386,7 @@ header .content p {
 
 .sectors {
   min-height: 100vh;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .sectors .title {
@@ -441,12 +441,12 @@ header .content p {
 }
 
 .sectors .sectors-container .sectors-content h2 {
-  color: #fff;
+  color: var(--white);
   text-transform: capitalize;
 }
 
 .sectors .sectors-container .sectors-content p {
-  color: #4DD3BE;
+  color: var(--light-green);
   cursor: pointer;
 }
 
@@ -510,7 +510,7 @@ header .content p {
 }
 
 .sectors .sector-container .sector-content:nth-child(2) p span {
-  color: #4DD3BE;
+  color: var(--light-green);
   text-decoration: underline;
 }
 
@@ -526,13 +526,15 @@ header .content p {
 .sectors .sector-container .sector-content:nth-child(2) ul li::before {
   content: ">";
   margin-right: 0.5rem;
-  color: #4DD3BE;
+  color: var(--light-green);
 }
 
 .clients {
   background: url("/images/Group 61.png") no-repeat;
   min-height: 60vh;
-  color: #fff;
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -559,6 +561,7 @@ header .content p {
   position: absolute;
   width: 100%;
   top: 30%;
+  left: 0;
   height: 200px;
   overflow: hidden;
 }
@@ -606,6 +609,15 @@ header .content p {
   background-position: center;
   background-attachment: fixed;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .product .latest-title {
@@ -618,11 +630,11 @@ header .content p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
+  color: var(--white);
 }
 
 .product .latest-title h1, .product .latest-title button {
-  margin: 4rem 0;
+  margin: 0 0 4rem 0;
 }
 
 .product .product-container {
@@ -638,13 +650,13 @@ header .content p {
 }
 
 .product .product-card {
-  background-color: #fff;
+  background-color: var(--white);
   margin-right: 40px;
   height: 400px;
 }
 
 .product .product-card .jobs-content {
-  border: 1px solid #fff;
+  border: 1px solid var(--white);
   margin-top: 3rem;
 }
 
@@ -663,7 +675,7 @@ header .content p {
 }
 
 .product .product-card .desc i {
-  color: #35B19D;
+  color: var(--darker-green);
   margin: 0 10px 0 0;
 }
 
@@ -673,7 +685,7 @@ header .content p {
 
 .product .product-card .desc a {
   margin: 15px 0;
-  color: #35B19D;
+  color: var(--darker-green);
   text-decoration: none;
 }
 
@@ -688,8 +700,8 @@ header .content p {
 }
 
 .product .product-info .job-title {
-  color: #fff;
-  background-color: #35B19D;
+  color: var(--white);
+  background-color: var(--darker-green);
   font-size: 1em;
   padding: 15px;
   text-transform: capitalize;
@@ -722,7 +734,7 @@ header .content p {
           align-items: center;
   cursor: pointer;
   z-index: 8;
-  color: #35B19D;
+  color: var(--darker-green);
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
@@ -744,14 +756,29 @@ header .content p {
   background: url("/images/Group 62.jpg") no-repeat;
   background-position: center;
   background-size: cover;
+  color: var(--white);
+}
+
+.careers .careers-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 70vh;
-  color: #fff;
 }
 
 .careers .careers-content h1 {
   font-size: 2.5em;
   font-weight: 500;
-  padding-top: 7rem;
   width: 700px;
 }
 
@@ -811,7 +838,7 @@ header .content p {
 }
 
 .news .news-container .news-content {
-  background-color: #fff;
+  background-color: var(--white);
   margin-top: 3rem;
 }
 
@@ -864,12 +891,12 @@ header .content p {
       -ms-flex-align: center;
           align-items: center;
   min-height: 35vh;
-  background: -webkit-gradient(linear, right top, left bottom, color-stop(50%, #4DD3BE), color-stop(50%, #35B19D));
-  background: linear-gradient(to left bottom, #4DD3BE 50%, #35B19D 50%);
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(50%, var(--light-green)), color-stop(50%, var(--darker-green)));
+  background: linear-gradient(to left bottom, var(--light-green) 50%, var(--darker-green) 50%);
 }
 
 .questions .questions-content {
-  color: #fff;
+  color: var(--white);
   text-align: center;
 }
 
@@ -882,10 +909,10 @@ header .content p {
 }
 
 footer {
-  background-color: #35B19D;
+  background-color: var(--darker-green);
   min-height: 50vh;
   margin-top: 8rem;
-  color: #fff;
+  color: var(--white);
 }
 
 footer .footer-container {
@@ -948,30 +975,30 @@ footer .footer-container .footer-content form {
 
 footer .footer-container .footer-content form input {
   padding: 10px 20px;
-  border: 1px solid #fff;
+  border: 1px solid var(--white);
   background-color: transparent;
-  color: #fff;
+  color: var(--white);
 }
 
 footer .footer-container .footer-content form input::-webkit-input-placeholder {
-  color: #fff;
+  color: var(--white);
 }
 
 footer .footer-container .footer-content form input:-ms-input-placeholder {
-  color: #fff;
+  color: var(--white);
 }
 
 footer .footer-container .footer-content form input::-ms-input-placeholder {
-  color: #fff;
+  color: var(--white);
 }
 
 footer .footer-container .footer-content form input::placeholder {
-  color: #fff;
+  color: var(--white);
 }
 
 footer .footer-container .footer-content .fa-envelope {
-  background-color: #fff;
-  color: #4DD3BE;
+  background-color: var(--white);
+  color: var(--light-green);
   font-size: 1.5em;
   padding: 7px 20px;
   cursor: pointer;
@@ -984,6 +1011,11 @@ footer ul {
 
 footer ul li {
   margin: 10px 0;
+  cursor: pointer;
+}
+
+footer ul li:hover {
+  text-decoration: underline;
 }
 
 footer .social-footer i {

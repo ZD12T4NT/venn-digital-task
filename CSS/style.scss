@@ -16,7 +16,7 @@ body{
 :root{
     --light-green:#4DD3BE;
     --darker-green:#2b9482;
-    --white:#f6f6f6;
+    --white:#fff;
     --black:#000;
 }
 
@@ -373,7 +373,7 @@ header{
          
 .sectors {
     min-height: 100vh;
-    background-color: #fff;
+    background-color: var(--white);
 
     .title{
         display: flex;
@@ -417,12 +417,12 @@ header{
             }
 
             h2{
-                color: #fff;
+                color: var(--white);
                 text-transform: capitalize;
             }
 
             p{
-                color: #4DD3BE;
+                color: var(--light-green);
                 cursor: pointer;
             }
         }
@@ -489,7 +489,7 @@ header{
                 margin-top: 1rem;
 
                 span{
-                    color: #4DD3BE;
+                    color: var(--light-green);
                     text-decoration: underline;
                 }
             }
@@ -507,7 +507,7 @@ header{
                 li::before{
                     content: ">";
                     margin-right: 0.5rem;
-                    color: #4DD3BE;
+                    color: var(--light-green);
                 }
             }
         }
@@ -520,7 +520,9 @@ header{
 .clients{
     background:url('/images/Group\ 61.png') no-repeat;
     min-height: 60vh;
-    color: #fff;
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
     position: relative;
     display: flex;
     justify-content: center;
@@ -539,6 +541,7 @@ header{
         position: absolute;
         width: 100%;
         top: 30%;
+        left:0;
         height: 200px;
         overflow: hidden;
 
@@ -584,6 +587,9 @@ header{
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
     
     
 
@@ -591,11 +597,11 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: #fff;
+        color: var(--white);
 
 
         h1, button{
-        margin: 4rem 0;
+        margin: 0 0 4rem 0;
 
         }
     }
@@ -614,14 +620,14 @@ header{
   }
   
   .product-card {
-    background-color: #fff;
+    background-color: var(--white);
     margin-right: 40px;
     height: 400px;
 
 
 
     .jobs-content{
-        border: 1px solid #fff;
+        border: 1px solid var(--white);
         margin-top: 3rem;        }
 
         .desc{
@@ -633,7 +639,7 @@ header{
 
 
             i{
-                color: #35B19D;
+                color: var(--darker-green);
                 margin: 0 10px 0 0 ;
             }
 
@@ -643,7 +649,7 @@ header{
 
             a{
                 margin: 15px 0;
-                color: #35B19D;
+                color: var(--darker-green);
                 text-decoration: none;
 
                 &:hover{
@@ -661,8 +667,8 @@ header{
 
 
     .job-title{
-        color: #fff;
-        background-color: #35B19D;
+        color: var(--white);
+        background-color: var(--darker-green);
         font-size: 1em;
         padding: 15px;
         text-transform: capitalize;
@@ -692,7 +698,7 @@ header{
     align-items: center;
     cursor: pointer;
     z-index: 8;
-    color: #35B19D;
+    color: var(--darker-green);
     transition: all .2s ease-in-out;
 
     &:hover{
@@ -720,17 +726,19 @@ header{
     background: url('/images/Group\ 62.jpg') no-repeat;
     background-position: center;
     background-size: cover;
-    height: 70vh;
-    color: #fff;
+    color: var(--white);
 
     .careers-content{
-
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; 
+        flex-direction: column;
+        height: 70vh;
         
         
         h1{
             font-size: 2.5em;
             font-weight: 500;
-            padding-top: 7rem;
             width: 700px;
 
            
@@ -785,7 +793,7 @@ background-color: #F7F7F7;
 
 
         .news-content{
-            background-color: #fff;
+            background-color: var(--white);
             margin-top: 3rem;
 
             .info{
@@ -843,13 +851,13 @@ background-color: #F7F7F7;
     justify-content: center;
     align-items: center;
     min-height: 35vh;
-    background: linear-gradient(to left bottom, #4DD3BE 50%, #35B19D 50%);
+    background: linear-gradient(to left bottom, var(--light-green) 50%, var(--darker-green) 50%);
 
 
     
 
     .questions-content{
-   color: #fff;
+   color: var(--white);
    text-align: center;
 
    h2{
@@ -866,10 +874,10 @@ background-color: #F7F7F7;
 // Footer Section (used bootstrap)
 
 footer{
-    background-color: #35B19D;
+    background-color: var(--darker-green);
     min-height: 50vh;
     margin-top: 8rem;
-    color: #fff;
+    color: var(--white);
 
     .footer-container{
         display: grid;
@@ -911,12 +919,12 @@ footer{
 
                 input{
                     padding: 10px 20px;
-                    border: 1px solid #fff;
+                    border: 1px solid var(--white);
                     background-color: transparent;
-                    color: #fff;
+                    color: var(--white);
 
                     &::placeholder{
-                        color: #fff;
+                        color: var(--white);
                     }
 
                     
@@ -926,8 +934,8 @@ footer{
            
 
             .fa-envelope{
-                background-color: #fff;
-                color: #4DD3BE;
+                background-color: var(--white);
+                color: var(--light-green);
                 font-size: 1.5em;
                 padding: 7px 20px;
                 cursor: pointer;
@@ -941,9 +949,15 @@ footer{
        list-style: none;
        padding: 0;
 
+
        li{
            margin: 10px 0;   
+           cursor: pointer;
 
+           &:hover{
+               text-decoration: underline;
+
+           }
        }
     }
 
