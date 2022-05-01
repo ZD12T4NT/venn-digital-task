@@ -123,9 +123,6 @@ body {
     transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -295,12 +292,20 @@ header .content p {
 
 .about {
   overflow: hidden;
-  position: relative;
   min-height: 100vh;
   position: relative;
   color: var(--white);
   background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, var(--light-green)), color-stop(40%, var(--darker-green)));
   background: linear-gradient(to left bottom, var(--light-green) 40%, var(--darker-green) 40%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about svg {
@@ -309,7 +314,6 @@ header .content p {
 }
 
 .about .about-content {
-  margin-top: 5rem;
   position: relative;
   z-index: 3;
   display: -ms-grid;
@@ -317,12 +321,6 @@ header .content p {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-}
-
-@media only screen and (max-width: 920px) {
-  .about .about-content {
-    margin-top: 7rem;
-  }
 }
 
 .about .about-content h1 {

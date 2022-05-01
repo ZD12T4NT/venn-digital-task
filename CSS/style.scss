@@ -43,6 +43,8 @@ animation: fadeIn 1.4s forwards;
 
 
 
+
+
 .burger div {
     width: 1.563rem;
     height: 0.188rem;
@@ -91,6 +93,7 @@ animation: fadeIn 1.4s forwards;
         display: flex;
         align-items: center;
         font-weight: 300;
+       
 
 
         @media only screen and (max-width:920px) {
@@ -103,10 +106,10 @@ animation: fadeIn 1.4s forwards;
             transform: translateX(100%);
             padding-top: 3.5rem;
             transition: transform 0.3s ease-in-out;
-            align-items:flex-start;
             justify-content: center;
             align-items: center;
             display: flex;
+
          
            
            
@@ -153,6 +156,7 @@ animation: fadeIn 1.4s forwards;
 
     .dropdown {
         float: left;
+
       }
       
       .dropdown .dropbtn {
@@ -175,7 +179,6 @@ animation: fadeIn 1.4s forwards;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
-       
       }
       
       .dropdown-content a {
@@ -186,6 +189,7 @@ animation: fadeIn 1.4s forwards;
         display: block;
         text-align: left;
         transition: all 0.2s ease-in-out;
+
 
         &:hover{
             border-left: 2px solid var(--light-green);
@@ -206,6 +210,7 @@ animation: fadeIn 1.4s forwards;
 // Hero Section
 
 
+
 header{
     background: url('/images/jellyfish.png') no-repeat;
     background-size: cover;
@@ -213,12 +218,13 @@ header{
     background-attachment: fixed;
     min-height: 100vh;
     color:var(--white);
+    
    
     .content{
         margin-top: 10rem;
         animation: introLoad 1.9s forwards;
-        
-        
+       
+
         h1{
             font-size: 2.5em;
             font-weight: 500;
@@ -264,14 +270,17 @@ header{
 
 
 
+// About Section
+
     .about{
         overflow:hidden;
-        position:relative;
         min-height: 100vh;
         position: relative;
         color: var(--white);
         background: linear-gradient(to left bottom, var(--light-green) 40%, var(--darker-green) 40%);
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
            svg{
                position: absolute;
@@ -284,18 +293,13 @@ header{
        
 
         .about-content{
-            margin-top: 5rem;
             position: relative;
             z-index: 3;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
 
-            @media only screen and (max-width:920px) {
-                margin-top: 7rem;
-              
-
-              }
+          
 
             
 
