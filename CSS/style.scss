@@ -13,6 +13,13 @@ body{
    
 }
 
+:root{
+    --light-green:#4DD3BE;
+    --darker-green:#2b9482;
+    --white:#f6f6f6;
+    --black:#000;
+}
+
 
 .container{
     max-width: 1200px;
@@ -39,7 +46,7 @@ animation: fadeIn 1.4s forwards;
 .burger div {
     width: 1.563rem;
     height: 0.188rem;
-    background: #f6f6f6;
+    background: var(--white);
     margin: 0.313rem;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
@@ -72,7 +79,7 @@ animation: fadeIn 1.4s forwards;
 
 
     i.fa-magnifying-glass{
-        color: #4DD3BE;
+        color: var(--light-green);
         cursor: pointer;
 
         @media only screen and (max-width:920px) {
@@ -87,7 +94,7 @@ animation: fadeIn 1.4s forwards;
 
 
         @media only screen and (max-width:920px) {
-            background-color: #2b9482;
+            background-color: var(--darker-green);
             position: absolute;
             top: 0;
             right: 0;
@@ -133,7 +140,7 @@ animation: fadeIn 1.4s forwards;
 
 
                 &:hover{
-                    color: #4DD3BE;
+                    color: var(--light-green);
                 }
             }
         }
@@ -152,7 +159,7 @@ animation: fadeIn 1.4s forwards;
         font-size: 16px;
         border: none;
         outline: none;
-        color: white;
+        color: var(--white);
         padding: 14px 16px;
         background-color: inherit;
         font-family: inherit; 
@@ -164,7 +171,7 @@ animation: fadeIn 1.4s forwards;
       .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #f9f9f9;
+        background-color: var(--white);
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
@@ -181,8 +188,8 @@ animation: fadeIn 1.4s forwards;
         transition: all 0.2s ease-in-out;
 
         &:hover{
-            border-left: 2px solid #4DD3BE;
-            color: #4DD3BE;
+            border-left: 2px solid var(--light-green);
+            color: var(--light-green);
         }
       }
       
@@ -205,7 +212,7 @@ header{
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
-    color:#fff;
+    color:var(--white);
    
     .content{
         margin-top: 10rem;
@@ -242,16 +249,16 @@ header{
 .more{
     margin-top: 25px;
     background-color: transparent;
-    border: 2px solid #4DD3BE;
-    color: #4DD3BE;
+    border: 2px solid var(--light-green);
+    color: var(--light-green);
     font-size: 1em;
     padding: 10px 40px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 
     &:hover{
-        background-color: #4DD3BE;
-        color: #fff;
+        background-color: var(--light-green);
+        color:var(--white);
     }
 }
 
@@ -262,8 +269,8 @@ header{
         position:relative;
         min-height: 100vh;
         position: relative;
-        color: #fff;
-        background: linear-gradient(to left bottom, #4DD3BE 40%, #35B19D 40%);
+        color: var(--white);
+        background: linear-gradient(to left bottom, var(--light-green) 40%, var(--darker-green) 40%);
 
         
            svg{
@@ -340,16 +347,16 @@ header{
     .more-white{
         margin-top: 25px;
         background-color: transparent;
-        border: 2px solid #fff;
-        color: #fff;
+        border: 2px solid var(--white);
+        color: var(--white);
         font-size: 1em;
         padding: 10px 40px;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
 
         &:hover{
-            background-color: #fff;
-            color: #000;
+            background-color: var(--white);
+            color: var(--black);
         }
     }
 

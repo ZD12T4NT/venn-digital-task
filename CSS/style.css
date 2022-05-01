@@ -12,6 +12,13 @@ body {
   background-color: #F7F7F7;
 }
 
+:root {
+  --light-green:#4DD3BE;
+  --darker-green:#2b9482;
+  --white:#f6f6f6;
+  --black:#000;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -41,7 +48,7 @@ body {
 .nav .burger div {
   width: 1.563rem;
   height: 0.188rem;
-  background: #f6f6f6;
+  background: var(--white);
   margin: 0.313rem;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
@@ -81,7 +88,7 @@ body {
 }
 
 .nav i.fa-magnifying-glass {
-  color: #4DD3BE;
+  color: var(--light-green);
   cursor: pointer;
 }
 
@@ -103,7 +110,7 @@ body {
 
 @media only screen and (max-width: 920px) {
   .nav .navbar {
-    background-color: #2b9482;
+    background-color: var(--darker-green);
     position: absolute;
     top: 0;
     right: 0;
@@ -161,7 +168,7 @@ body {
 }
 
 .nav .navbar ul li:hover {
-  color: #4DD3BE;
+  color: var(--light-green);
 }
 
 .nav .nav-active {
@@ -177,7 +184,7 @@ body {
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color: var(--white);
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -187,7 +194,7 @@ body {
 .nav .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: var(--white);
   min-width: 160px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -206,8 +213,8 @@ body {
 }
 
 .nav .dropdown-content a:hover {
-  border-left: 2px solid #4DD3BE;
-  color: #4DD3BE;
+  border-left: 2px solid var(--light-green);
+  color: var(--light-green);
 }
 
 .nav .dropdown:hover .dropdown-content {
@@ -220,7 +227,7 @@ header {
   background-position: center;
   background-attachment: fixed;
   min-height: 100vh;
-  color: #fff;
+  color: var(--white);
 }
 
 header .content {
@@ -272,8 +279,8 @@ header .content p {
 .more {
   margin-top: 25px;
   background-color: transparent;
-  border: 2px solid #4DD3BE;
-  color: #4DD3BE;
+  border: 2px solid var(--light-green);
+  color: var(--light-green);
   font-size: 1em;
   padding: 10px 40px;
   cursor: pointer;
@@ -282,8 +289,8 @@ header .content p {
 }
 
 .more:hover {
-  background-color: #4DD3BE;
-  color: #fff;
+  background-color: var(--light-green);
+  color: var(--white);
 }
 
 .about {
@@ -291,9 +298,9 @@ header .content p {
   position: relative;
   min-height: 100vh;
   position: relative;
-  color: #fff;
-  background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, #4DD3BE), color-stop(40%, #35B19D));
-  background: linear-gradient(to left bottom, #4DD3BE 40%, #35B19D 40%);
+  color: var(--white);
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(40%, var(--light-green)), color-stop(40%, var(--darker-green)));
+  background: linear-gradient(to left bottom, var(--light-green) 40%, var(--darker-green) 40%);
 }
 
 .about svg {
@@ -363,8 +370,8 @@ header .content p {
 .more-white {
   margin-top: 25px;
   background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid var(--white);
+  color: var(--white);
   font-size: 1em;
   padding: 10px 40px;
   cursor: pointer;
@@ -373,8 +380,8 @@ header .content p {
 }
 
 .more-white:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .sectors {
