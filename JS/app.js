@@ -102,3 +102,23 @@ function reveal () {
         }
     }
 }
+
+
+
+
+// Jquery reveal
+
+// Just add the class of slideup to the desired elements
+
+// $(Document).ready(function() {
+//     $(window).scroll(function () {
+//         $(".slideup").each(function() {
+//             let x = $(this).offset().top;
+
+//             let y = $(window).scrollTop();
+//                 if( x < y + 550) {
+//                 $(this).addClass('slide')
+//             }
+//         });
+//     });
+// })
