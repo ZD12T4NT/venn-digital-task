@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
-* {
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 body {
@@ -43,6 +43,9 @@ body {
   height: 80px;
   -webkit-animation: fadeIn 1.4s forwards;
           animation: fadeIn 1.4s forwards;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 9999;
 }
 
 .nav .burger div {
@@ -116,8 +119,8 @@ body {
     right: 0;
     height: 100vh;
     width: 300px;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: translateX(105%);
+            transform: translateX(105%);
     padding-top: 3.5rem;
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
     transition: -webkit-transform 0.3s ease-in-out;
@@ -169,8 +172,8 @@ body {
 }
 
 .nav .nav-active {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
 }
 
 .nav .dropdown {

@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
-*{
-    box-sizing: border-box;
-    padding: 0;
+
+*,*::before,*::after{
     margin: 0;
-}
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -40,6 +41,8 @@ justify-content: space-between;
 align-items: center;
 height: 80px;
 animation: fadeIn 1.4s forwards;
+position:sticky;
+z-index: 9999;
 
 
 
@@ -89,6 +92,8 @@ animation: fadeIn 1.4s forwards;
         }
     }
 
+    
+
     .navbar{
         display: flex;
         align-items: center;
@@ -103,7 +108,7 @@ animation: fadeIn 1.4s forwards;
             right: 0;
             height: 100vh;
             width: 300px;
-            transform: translateX(100%);
+            transform: translateX(105%);
             padding-top: 3.5rem;
             transition: transform 0.3s ease-in-out;
             justify-content: center;
@@ -151,7 +156,7 @@ animation: fadeIn 1.4s forwards;
     }
 
     .nav-active {
-        transform: translateX(0);
+        transform: translateX(5%);
       }
 
     .dropdown {
