@@ -612,7 +612,16 @@ header{
         h1, button{
         margin: 0 0 4rem 0;
 
+        @media only screen and (max-width:920px) {
+            margin: 0 0 3rem 0;
+            }
+
         }
+
+        @media only screen and (max-width:920px) {
+            justify-content: center;
+            flex-direction: column;
+            }
     }
 
   

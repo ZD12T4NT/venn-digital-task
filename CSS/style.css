@@ -638,6 +638,24 @@ header .content p {
   margin: 0 0 4rem 0;
 }
 
+@media only screen and (max-width: 920px) {
+  .product .latest-title h1, .product .latest-title button {
+    margin: 0 0 3rem 0;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .product .latest-title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .product .product-container {
   display: -webkit-box;
   display: -ms-flexbox;
